@@ -44,7 +44,7 @@
     "Replay":
     {
       "menu":"",  
-      "callback":"record",
+      "callback":"replay",
       "parameters":
       {
         "Replay": {"type": "Boolean", "default":0, "useForMapping":true}
