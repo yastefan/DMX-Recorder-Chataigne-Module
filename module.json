@@ -1,0 +1,54 @@
+{
+  "name":"DMX Recorder",
+  "type":"DMX",
+  "path":"Protocol",
+  
+  "version":"0.1.0",
+  "description":"A Chataigne module to record DMX",
+  "url":"https://github.com/yastefan/DMX-Recorder-Chataigne-Module",
+  "downloadURL":"https://github.com/yastefan/DMX-Recorder-Chataigne-Module/archive/refs/heads/main.zip",
+
+  "hasInput":true,
+  "hasOutput":true, 
+
+  "hideDefaultCommands":false,
+  
+  "defaults":
+  {	
+    "dmxType":"Art-Net"
+  },
+
+  "parameters":
+  {
+
+  },
+  "hideDefaultParameters": [],
+  "scripts": ["recorder.js"],
+
+  "values":
+  {
+  },
+
+  "commands":
+  {
+   
+   "Record":
+    {
+      "menu":"",  
+      "callback":"record",
+      "parameters":
+      {
+        "Record": {"type": "Boolean", "default":0, "useForMapping":true}
+      }
+    },
+    "Replay":
+    {
+      "menu":"",  
+      "callback":"record",
+      "parameters":
+      {
+        "Replay": {"type": "Boolean", "default":0, "useForMapping":true}
+      }
+    }
+  }
+}
